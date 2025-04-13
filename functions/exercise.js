@@ -10,8 +10,21 @@
 // TIP: i want the calculator to perform an add operation on two numbers means your calculator:
 // should take: two numbers and one operation function as parameters
 
-const cost = 11;
-if (cost > 10) {
-  var number = 10;
+function add(num1, num2) {
+  return num1 + num2;
 }
-console.log(number);
+function subtract(num1, num2) {
+  return num1 - num2;
+}
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+function divide(num1, num2) {
+  return num1 / num2;
+}
+
+function calculator(num1, num2, operation){
+  return operation(num1, num2)
+}
+
+console.log(calculator(5, 10, add)); // 15
